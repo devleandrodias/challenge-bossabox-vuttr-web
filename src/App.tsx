@@ -1,8 +1,7 @@
 import React from 'react';
-import Main from './pages/main';
 
-import './styles/global.css'
+import LayoutMain from './layout/main';
 
 export default function App() {
-  return <Main />
+  return <LayoutMain />
 }
