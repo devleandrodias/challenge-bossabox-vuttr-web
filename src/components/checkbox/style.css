@@ -1,0 +1,13 @@
+.search-check {
+  display: flex;
+  align-items: center;
+}
+
+.search-check input {
+  margin-right: 10px;
+}
+
+.search-check span {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.1em;
+}

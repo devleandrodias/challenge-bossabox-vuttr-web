@@ -4,6 +4,8 @@ import Checkbox from '../../components/checkbox';
 import Button from '../../components/button';
 import Card from '../../components/card';
 
+import './style.css'
+
 export default function Main() {
   return (
     <Fragment>

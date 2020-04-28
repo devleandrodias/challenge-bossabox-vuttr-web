@@ -1,0 +1,6 @@
+.group-search {
+  display: flex;
+  margin: 15px 0px 5px 0px;
+  align-items: center;
+  justify-content: space-between;
+}

@@ -1,0 +1,20 @@
+.button {
+  border: none;
+  border-radius: 5px;
+  opacity: 1;
+  text-align: center;
+  letter-spacing: 0.36px;
+  color: #ffffff;
+  opacity: 1;
+  padding: 15px;
+  width: 100px;
+  font-weight: bold;
+}
+
+.button-neutral {
+  background: #365df0 0% 0% no-repeat padding-box;
+}
+
+.button-neutral:hover {
+  background: #2f55cc 0% 0% no-repeat padding-box;
+}

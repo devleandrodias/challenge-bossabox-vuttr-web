@@ -1,5 +1,12 @@
 import React from 'react';
 
+import './style.css'
+
 export default function Checkbox() {
-  return <input type="checkbox" />
+  return (
+    <div className="search-check">
+      <input type="checkbox" />
+      <span>search in tags only</span>
+    </div>
+  )
 }
