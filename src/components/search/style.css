@@ -1,0 +1,10 @@
+.search {
+  background: #f5f4f6 0% 0% no-repeat padding-box;
+  border: 1px solid #ebeaed;
+  border-radius: 5px;
+  opacity: 1;
+  padding: 12px;
+  width: 40%;
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 15px 0px 5px 0px;
+}
