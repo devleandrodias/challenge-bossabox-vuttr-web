@@ -11,10 +11,13 @@
   outline: 0;
 }
 
-html,
-body,
-#root {
+html {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fcfcfd;
   height: 100%;
+  margin: 0 25%;
 }
 
 body {
@@ -25,14 +28,15 @@ body,
 input,
 label {
   font-size: 15px;
-  background-color: #fcfcfd;
   font-family: "PT Mono", monospace;
   color: #170c3a;
 }
 
 h1 {
   text-align: left;
-  font: Semibold 42px/50px Source Sans Pro;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
   letter-spacing: 0.84px;
   color: #170c3a;
   opacity: 1;

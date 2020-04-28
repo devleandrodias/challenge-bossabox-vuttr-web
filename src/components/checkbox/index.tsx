@@ -1,5 +1,5 @@
 import React from 'react';
 
 export default function Checkbox() {
-  return <input />
+  return <input type="checkbox" />
 }
