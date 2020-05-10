@@ -1,9 +1,13 @@
 import React from 'react';
 
-import './style.css'
+import './style.css';
 
-export default function Search() {
-  return (
-    <input className="search" placeholder="Digite o que está procurando..." type="text" />
-  )
-}
+const Search: React.FC = () => (
+  <input
+    className="search"
+    placeholder="Digite o que está procurando..."
+    type="text"
+  />
+);
+
+export default Search;

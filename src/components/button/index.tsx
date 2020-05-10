@@ -1,7 +1,9 @@
 import React from 'react';
 
-import './style.css'
+import './style.css';
 
-export default function Button() {
-  return <button className="button button-neutral">Add</button>
-}
+const Button: React.FC = () => (
+  <button className="button button-neutral">Add</button>
+);
+
+export default Button;

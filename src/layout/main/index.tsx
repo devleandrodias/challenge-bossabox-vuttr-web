@@ -2,8 +2,8 @@ import React from 'react';
 
 import Main from '../../pages/main';
 
-import '../../styles/global.css'
+import '../../styles/global.css';
 
-export default function LayoutMain() {
-  return <Main />
-}
+const LayoutMain: React.FC = () => <Main />;
+
+export default LayoutMain;

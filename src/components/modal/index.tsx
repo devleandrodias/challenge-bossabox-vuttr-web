@@ -1,5 +1,5 @@
 import React from 'react';
 
-export default function Modal() {
-  return <span>Modal...</span>
-}
+const Modal: React.FC = () => <span>Modal...</span>;
+
+export default Modal;
