@@ -10,7 +10,7 @@ import './style.css';
 interface Result {
   message: string;
   success: boolean;
-  data: [Tool];
+  data: Tool[];
   error: string;
 }
 
@@ -45,7 +45,19 @@ const Main: React.FC = () => {
         <Checkbox />
         <Button />
       </div>
-      {tools ? <Card /> : <h1>Carregando</h1>}
+      {tools ? (
+        tools.data.map(tool => (
+          <Card
+            key={tool._id}
+            title={tool.title}
+            tags={tool.tags}
+            description={tool.description}
+            link={tool.link}
+          />
+        ))
+      ) : (
+        <h1>Carregando</h1>
+      )}
     </>
   );
 };
