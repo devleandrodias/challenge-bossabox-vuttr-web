@@ -1,13 +1,12 @@
 import React from 'react';
-
-import './style.css';
+import { GrSearch } from 'react-icons/gr';
+import { Wrapper, Input } from './style';
 
 const Search: React.FC = () => (
-  <input
-    className="search"
-    placeholder="Digite o que está procurando..."
-    type="text"
-  />
+  <Wrapper>
+    <GrSearch size={20} />
+    <Input type="text" placeholder="Digite o que está procurando..." />
+  </Wrapper>
 );
 
 export default Search;
