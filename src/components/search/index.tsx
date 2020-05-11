@@ -4,7 +4,7 @@ import { Wrapper, Input } from './style';
 
 const Search: React.FC = () => (
   <Wrapper>
-    <GrSearch size={20} />
+    <GrSearch size={20} cursor="pointer" />
     <Input type="text" placeholder="Digite o que está procurando..." />
   </Wrapper>
 );

@@ -29,10 +29,18 @@ h2 {
   font-weight: bold;
 }
 
-.button-neutral {
+.button-primary-neutral {
   background: #365df0 0% 0% no-repeat padding-box;
 }
 
-.button-neutral:hover {
+.button-primary-neutral:hover {
   background: #2f55cc 0% 0% no-repeat padding-box;
+}
+
+.button-primary-success {
+  background: #0dcb7d 0% 0% no-repeat padding-box;
+}
+
+.button-primary-success:hover {
+  background: #10b26c 0% 0% no-repeat padding-box;
 }

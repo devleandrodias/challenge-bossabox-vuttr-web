@@ -53,7 +53,7 @@ const Main: React.FC = () => {
         <Checkbox />
         <button
           type="button"
-          className={`button ${ButtonsClass.Neutral}`}
+          className={`button ${ButtonsClass.PrimaryNeutral}`}
           onClick={() => handleShowModal(true)}
         >
           Add

@@ -1,3 +1,4 @@
 export enum ButtonsClass {
-  Neutral = 'button-neutral',
+  PrimaryNeutral = 'button-primary-neutral',
+  PrimarySuccess = 'button-primary-success',
 }
