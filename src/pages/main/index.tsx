@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import Search from '../../components/search';
 import Checkbox from '../../components/checkbox';
-import Button from '../../components/button';
+import Search from '../../components/search';
+import Modal from '../../components/modal';
 import Card from '../../components/card';
 import api from '../../services/api';
+
+import { ButtonsClass } from '../../enum/button.enum';
 
 import './style.css';
 
@@ -24,6 +26,7 @@ interface Tool {
 
 const Main: React.FC = () => {
   const [tools, setTools] = useState<Result | null>(null);
+  const [showModal, setShowModal] = useState(Boolean);
 
   useEffect(() => {
     async function loadTools(): Promise<void> {
@@ -36,14 +39,25 @@ const Main: React.FC = () => {
     loadTools();
   }, []);
 
+  function handleShowModal(status: boolean): void {
+    setShowModal(status);
+  }
+
   return (
     <>
+      {showModal && <Modal />}
       <h1>VUTTR</h1>
       <h2>Very Useful Tools to Remember</h2>
       <div className="group-search">
         <Search />
         <Checkbox />
-        <Button />
+        <button
+          type="button"
+          className={`button ${ButtonsClass.Neutral}`}
+          onClick={() => handleShowModal(true)}
+        >
+          Add
+        </button>
       </div>
       {tools ? (
         tools.data.map(tool => (
